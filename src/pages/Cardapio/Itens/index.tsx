@@ -1,11 +1,12 @@
-import styles from './itens.json';
+import styles from './Itens.module.scss';
 import cardapio from './itens.json';
+import Item from './Item';
 
 export default function Itens() {
     return (
-        <div>
+        <div className={styles.itens}>
             {cardapio.map((item) => (
-                <div>{item.title}</div>
+                <Item key={item.id} />
             ))}
         </div>
     );
