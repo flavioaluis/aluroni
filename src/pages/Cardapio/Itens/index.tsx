@@ -1,6 +1,6 @@
 import { useEffect, useState, useCallback } from 'react';
 import styles from './Itens.module.scss';
-import cardapio from './itens.json';
+import cardapio from 'data/cardapio.json';
 import Item from './Item';
 
 
