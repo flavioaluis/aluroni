@@ -16,7 +16,7 @@ export default function TagsPrato({
         [styles[`tags__tipo__${category.label.toLowerCase()}`]]: true
       })}>{category.label}</div>
       <div className={styles.tags__porcao}>{size}g</div>
-      <div className={styles.tags__qtdpessoas}>{serving} 2 pessoas{serving === 1 ? '' : 's'}</div>
+      <div className={styles.tags__qtdpessoas}>{serving} pessoas{serving === 1 ? '' : 's'}</div>
       <div className={styles.tags__valor}>R$ {price.toFixed(2)}</div>
     </div>
   );
